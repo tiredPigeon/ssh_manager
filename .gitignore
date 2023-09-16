@@ -6,3 +6,5 @@ pnpm-lock.yaml
 src/**/*.js
 src/**/*.js.map
 .idea/
+BLACKBOX_README.md
+easycode.ignore

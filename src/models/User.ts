@@ -1,35 +1,43 @@
-import { Column, Entity, PrimaryGeneratedColumn,BaseEntity } from "typeorm";
+import {
+  Column,
+  Entity,
+  PrimaryGeneratedColumn,
+  BaseEntity,
+  ManyToOne,
+} from "typeorm"
 
 @Entity()
-export class User extends BaseEntity{
-
+export class User extends BaseEntity {
   @PrimaryGeneratedColumn()
-  id?: Number;
+  id?: Number
 
   @Column()
-  userName?: String;
+  userName?: String
 
   @Column()
-  password?: String;
-  
-  @Column()
-  ips?: String;
-  
-  @Column()
-  createdDate?: Date;
+  password?: String
 
   @Column()
-  updatedDate?: Date;
+  ips?: String
 
   @Column()
-  endDate?: Date;
+  createdDate?: Date
 
   @Column()
-  isActive?: Boolean;
+  updatedDate?: Date
 
   @Column()
-  countLimit?: Number;
+  createdBy?: String
 
   @Column()
-  toatalTraffic?: Number;
+  durationInDays?: Number
+
+  @Column()
+  isActive?: Boolean
+
+  @Column()
+  countLimit?: Number
+
+  @Column()
+  toatalTraffic?: String
 }
