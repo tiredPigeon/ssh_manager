@@ -2,11 +2,11 @@
   "name": "ssh_manager",
   "version": "1.0.0",
   "description": "linux user manager",
-  "main": "app.ts",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "dev": "ts-node app.ts"
+    "start": "node index.js",
+    "dev": "ts-node index.ts"
   },
   "keywords": [
     "vps",
